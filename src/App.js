@@ -46,7 +46,7 @@ function App() {
         <div className='tools'>
           <button className='btn btn-generate' onClick={getQuote}>Generate a new quote</button>
           <a className="btn btn-twitter" target="_blank"
-            href={`https://twitter.com/intent/tweet?text=${quote}%0a%0a- ${author}%0a%0aVisit for more: ${window.location.host}`} rel="noreferrer">
+            href={`https://twitter.com/intent/tweet?text=${quote}%0a%0a- ${author}%0a%0aVisit for more: ${window.location.href}`} rel="noreferrer">
             {twitterSvg()} <span>Tweet this quote</span>
           </a>
           <button className='btn btn-copy' onClick={copyHandler}>{copied ? 'Copied!' : 'Copy this quote'}</button>
